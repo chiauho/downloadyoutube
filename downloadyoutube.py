@@ -2,13 +2,14 @@ import yt_dlp
 
 # Options for video download (MP4 with subtitles)
 video_opts = {
-    "format": "mp4",
+    "format": "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]",
     "write_sub": True,
     "write_auto_sub": True,
     "sub_lang": "en",
     "sub_format": "srt",
     "embed_subs": True
 }
+
 
 # Options for audio download (MP3)
 audio_opts = {
